@@ -1,0 +1,204 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="user.master.cs" Inherits="fabricationscratch.user" %>
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+	<title></title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+   <link href="bootstrap\css\bootstrap.min.css" rel="stylesheet">
+	
+	<link href="bootstrap/css/mystyle.css" rel="stylesheet" />
+	   
+
+
+	
+
+	<style>
+		   </style>
+	<script>
+		$(document).ready(function () {
+			$("#dropdown05").mouseenter(function () {
+				$("#toogle_div").animate({
+					height: 'toggle'
+				});
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+
+	<%--header--%>
+	<header id="topheader">
+		<div class="pt-xl-2 p-lg-1" >
+			<div class="container-fluid ">
+				<div class="row">
+					<div class="col-12 text-right">
+						<a class="" href="tel:8108432256"><i class="fas fa-phone"></i>(+91) 8108432256</a>
+						<a class="" href="mailto:khansufiyanmirza@gmail.com"><i
+							class="far fa-envelope"></i>+khansufiyanmirza@gmail.com</a>
+					</div>
+
+
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+	<section style="">
+		<nav class="navbar navbar-expand-lg p-0  head-text-color  " id="ftco-navbar">
+			<div class="container">
+				<a class="navbar-brand " id="brand" href="index.html">Fabrication-Trio</a>
+				<button class="navbar-toggler btn-color text-white" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span>Menu
+				</button>
+
+				<div class="collapse navbar-collapse " id="ftco-nav">
+					<ul class="navbar-nav ml-auto  ">
+						<li class="nav-item active  "><a href="index.aspx" class="nav-link  text_style   ">Home</a></li>
+
+
+
+						<li class="nav-item dropdown">
+							<a class="nav-link  text_style dropdown-toggle  " href="#" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Category</a>
+							<div class="dropdown-menu   " id="toogle_div" aria-labelledby="dropdown05">
+								<a class="dropdown-item  " href="shed.aspx">Shed</a>
+								<a class="dropdown-item  " href="grill.aspx">Grills</a>
+								<a class="dropdown-item  " href="door.aspx">Doors</a>
+								<a class="dropdown-item   " href="maingate.aspx">Main Gate</a>
+								<a class="dropdown-item " href="staregair.aspx">Stare Gair</a>
+							</div>
+						</li>
+						<li class="nav-item "><a href="about.aspx" class="nav-link  text_style  ">About</a></li>
+						<li class="nav-item "><a href="contact.aspx" class="nav-link text_style  ">Contact</a></li>
+						<li class="nav-item cta cta-colored "><a href="cart.aspx" class="nav-link    text_style"><span class="icon-shopping_cart"></span>[<asp:Label Text="text" ID="total" runat="server" />]</a></li>
+
+					</ul>
+					 <nav class="navbar navbar-expand-sm ">
+				   <input class="form-control mr-sm-2" type="text" placeholder="Search" id="searchbox">
+	<button class="btn btn-primary" type="submit" onclick="search()">Search</button>
+					  </nav>
+				</div>
+			</div>
+		</nav>
+
+	</section>
+	<%--haeder end--%>
+
+	<div>
+		<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+		</asp:ContentPlaceHolder>
+	</div>
+
+
+
+
+
+	<%--start--%>
+
+	<br />
+	<br />
+	<section class="ftco-section ftco-no-pt ftco-no-pb pt-2  text-dark" style="background-color: #f6f914">
+		<div class="container-fluid  py-1 " >
+			<div class="row d-flex justify-content-center py-1">
+				<div class="col-md-6 text-center">
+					<h2 style="font-size: 22px;" class="mb-0">Subcribe to our Newsletter</h2>
+					<span>Get e-mail updates about our latest shops and special offers</span>
+				</div>
+				<div class="col-md-6 d-flex align-items-center">
+					<form action="#" class="subscribe-form">
+						<div class="form-group d-flex">
+							<span class="w-100">
+								<input type="text" class="form-control w-100" placeholder="Enter email address"></span>
+							<button type=" submit" class="btn btn-primary ">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<%--end--%>
+   <%-- <i class="far fa-arrow-to-top"></i>--%>
+	<%--footer start--%>
+	<footer class="full-footer  " style="background-color:#C2CAD0">
+		<div class="container top-footer pt-md-2 p-1">
+			<div class="row">
+				<div class="col-lg-3 col-md-4 col-xs-12">
+					<h3>about us</h3>
+					<p>
+						dummy text
+					Websites can be accessed via a public Internet Protocol (IP) network,
+					 such as the Internet, 
+					or a private local area network (LAN), 
+					by a uniform resource locator (URL) that identifies the site.
+					<a href="#">Read more....</a>
+					</p>
+					<a style="color: aliceblue" href="#" class="p-1"><i class="fab fa-2x fa-facebook-square"></i></a>
+					<a style="color: aliceblue" href="#" class="p-1"><i class="fab fa-2x fa-google-plus-g"></i></a>
+					<a style="color: aliceblue" href="#" class="p-1"><i class="fab fa-2x fa-twitter"></i></a>
+					<a style="color: aliceblue" href="#" class="p-1"><i class="fab fa-2x fa-instagram"></i></a>
+
+				</div>
+				<div class="col-lg-3 col-md-4 col-xs-12">
+
+					<h3>Important links</h3>
+					<br>
+					<a href="#">youtube channel</a><br>
+					<a href="#">blog</a><br>
+					<a href="#">privacy policy</a><br>
+					<a href="#">my another web</a><br>
+				</div>
+				<div class="col-lg-3 col-md-4 col-xs-12">
+
+					<h3>our services</h3>
+					<br>
+					<a href="web_designing.html">web designining</a><br>
+					<a href="seo.html">seo service</a><br>
+					<a href="mobile_development.html">mobile development</a><br>
+					<a href="graphic_designing.html">graphic designing</a><br>
+				</div>
+				<div class="col-lg-3 col-md-4 col-xs-12">
+
+					<h3>contact us</h3>
+					<br>
+					<a class="pt-1 p-1" href="tel:8108432256"><i class="fas fa-phone"></i>(+91) 8108432256</a><br>
+					<a class="pt-1 p-1" href="mailto:khansufiyanmirza@gmail.com">
+						<i class="far fa-envelope"></i>khansufiyanmirza@gmail.com</a><br>
+					<div class="embed-responsive embed-responsive-16by9">
+						<iframe class="embed-responsive-item"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30641.7116519989!2d73.08311158108337!3d19.034330455912958!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7e9e80f68af95%3A0x340a3e0cba35a32d!2sPriyadarshani%20Society!5e0!3m2!1sen!2sin!4v1566801191956!5m2!1sen!2sin"></iframe>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		<div class="container-fluid bottom-footer pt-1">
+			<div class="row">
+				<div class="col-12 text-center">
+					<p class="text-center text-primary">&copy; 2019 TechTrio.com </p>
+				</div>
+			</div>
+		</div>
+	</footer>
+		<script type="text/javascript">
+		function search()
+		{
+
+			window.location = "products.aspx?search=" + document.getElementById("searchbox").value;
+		}
+	</script>
+	<%--footer end--%>
+	 <script src="bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/b560810273.js"></script>
+</body>
+</html>
+
+

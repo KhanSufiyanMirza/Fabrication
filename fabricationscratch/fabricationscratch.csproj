@@ -1,0 +1,450 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{28637704-2084-47F5-8FCA-355E4E764411}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>fabricationscratch</RootNamespace>
+    <AssemblyName>fabricationscratch</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.aspx" />
+    <Content Include="addcart.aspx" />
+    <Content Include="add_cookies.aspx" />
+    <Content Include="bootstrap\css\admin_master.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\mystyle.css" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.3.1.slim.min.js" />
+    <Content Include="bootstrap\js\popper.min.js" />
+    <Content Include="cart.aspx" />
+    <Content Include="checkout.aspx" />
+    <Content Include="contact.aspx" />
+    <Content Include="delete_cart.aspx" />
+    <Content Include="door.aspx" />
+    <Content Include="fab_admin\add_category.aspx" />
+    <Content Include="fab_admin\add_product.aspx" />
+    <Content Include="fab_admin\delete_category.aspx" />
+    <Content Include="fab_admin\display_order.aspx" />
+    <Content Include="fab_admin\WebForm1.aspx" />
+    <Content Include="grill.aspx" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="images\cage\cage %281%29.jpg" />
+    <Content Include="images\cage\cage %2810%29.jpg" />
+    <Content Include="images\cage\cage %282%29.jpg" />
+    <Content Include="images\cage\cage %283%29.jpg" />
+    <Content Include="images\cage\cage %284%29.jpg" />
+    <Content Include="images\cage\cage %285%29.jpg" />
+    <Content Include="images\cage\cage %286%29.jpg" />
+    <Content Include="images\cage\cage %287%29.jpg" />
+    <Content Include="images\cage\cage %288%29.jpg" />
+    <Content Include="images\cage\cage %289%29.jpg" />
+    <Content Include="images\carosol.jpg" />
+    <Content Include="images\carosol1.jpg" />
+    <Content Include="images\carousel_1.jpeg" />
+    <Content Include="images\carousel_2.jpeg" />
+    <Content Include="images\carousel_3.jpeg" />
+    <Content Include="images\chamber1.jpg" />
+    <Content Include="images\chamber2.jpg" />
+    <Content Include="images\chamber3.jpg" />
+    <Content Include="images\chamber4.jpg" />
+    <Content Include="images\chamber5.jpg" />
+    <Content Include="images\chamber6.jpg" />
+    <Content Include="images\crown.png" />
+    <Content Include="images\customer_service.png" />
+    <Content Include="images\door1.jpg" />
+    <Content Include="images\door2.jpg" />
+    <Content Include="images\door3.jpg" />
+    <Content Include="images\door4.jpg" />
+    <Content Include="images\door5.jpg" />
+    <Content Include="images\door\door %281%29.jpg" />
+    <Content Include="images\door\door %2810%29.jpg" />
+    <Content Include="images\door\door %2811%29.jpg" />
+    <Content Include="images\door\door %2812%29.jpg" />
+    <Content Include="images\door\door %2813%29.jpg" />
+    <Content Include="images\door\door %2814%29.jpg" />
+    <Content Include="images\door\door %282%29.jpg" />
+    <Content Include="images\door\door %283%29.jpg" />
+    <Content Include="images\door\door %284%29.jpg" />
+    <Content Include="images\door\door %285%29.jpg" />
+    <Content Include="images\door\door %286%29.jpg" />
+    <Content Include="images\door\door %287%29.jpg" />
+    <Content Include="images\door\door %288%29.jpg" />
+    <Content Include="images\door\door %289%29.jpg" />
+    <Content Include="images\door_3.jpg" />
+    <Content Include="images\free-delivery.png" />
+    <Content Include="images\gate\0afb5ec2-5f1e-4311-9472-8a1fe29672ae.jpg" />
+    <Content Include="images\gate\12+ Awesome Modern Fencing Gate Ideas.jpg" />
+    <Content Include="images\gate\Cantilever wrought iron gate.jpg" />
+    <Content Include="images\gate\CNC vector file.jpg" />
+    <Content Include="images\gate\Cửa cổng INOX có thể được tích hợp thêm các thiết bị tự động cao cấp được nhập khẩu từ Italia, Malaysia như BFT, FAAC, G-Force, Celmer, Letron_.jpg" />
+    <Content Include="images\gate\Dora Doors Designer Security Doors.jpg" />
+    <Content Include="images\gate\Greensboro NC wrought iron driveway gate fabricator.jpg" />
+    <Content Include="images\gate\Item Code_ g4  Steel external gates.jpg" />
+    <Content Include="images\gate\SIB _ Fabricant Portail Aluminium, portail battant, portail coulissant.jpg" />
+    <Content Include="images\grill.jpg" />
+    <Content Include="images\grill1.jpg" />
+    <Content Include="images\grill2.jpg" />
+    <Content Include="images\grill3.jpg" />
+    <Content Include="images\grill\grill1.jpg" />
+    <Content Include="images\grill\grill10.jpg" />
+    <Content Include="images\grill\grill11.jpg" />
+    <Content Include="images\grill\grill12.jpg" />
+    <Content Include="images\grill\grill2.jpg" />
+    <Content Include="images\grill\grill3.jpg" />
+    <Content Include="images\grill\grill4.jpg" />
+    <Content Include="images\grill\grill5.jpg" />
+    <Content Include="images\grill\grill6.jpg" />
+    <Content Include="images\grill\grill7.jpg" />
+    <Content Include="images\grill\grill8.jpg" />
+    <Content Include="images\grill\grill9.jpg" />
+    <Content Include="images\grill_3.jpg" />
+    <Content Include="images\grill_1.jpg" />
+    <Content Include="images\maingate_4.jpg" />
+    <Content Include="images\rallings\rallings %281%29.jpg" />
+    <Content Include="images\rallings\rallings %2810%29.jpg" />
+    <Content Include="images\rallings\rallings %2811%29.jpg" />
+    <Content Include="images\rallings\rallings %282%29.jpg" />
+    <Content Include="images\rallings\rallings %283%29.jpg" />
+    <Content Include="images\rallings\rallings %284%29.jpg" />
+    <Content Include="images\rallings\rallings %285%29.jpg" />
+    <Content Include="images\rallings\rallings %286%29.jpg" />
+    <Content Include="images\rallings\rallings %287%29.jpg" />
+    <Content Include="images\rallings\rallings %288%29.jpg" />
+    <Content Include="images\rallings\rallings %289%29.jpg" />
+    <Content Include="images\sarosul.jpg" />
+    <Content Include="images\shed1.jpg" />
+    <Content Include="images\shed2.jpg" />
+    <Content Include="images\shed_4.jpg" />
+    <Content Include="images\shed_6.jpg" />
+    <Content Include="images\shutter1.jpg" />
+    <Content Include="images\shutter2.jpg" />
+    <Content Include="images\shutter3.jpg" />
+    <Content Include="images\shutter4.jpg" />
+    <Content Include="images\shutter5.jpg" />
+    <Content Include="images\shutter6.jpg" />
+    <Content Include="images\shutter\shutter %281%29.jpg" />
+    <Content Include="images\shutter\shutter %2810%29.jpg" />
+    <Content Include="images\shutter\shutter %282%29.jpg" />
+    <Content Include="images\shutter\shutter %283%29.jpg" />
+    <Content Include="images\shutter\shutter %284%29.jpg" />
+    <Content Include="images\shutter\shutter %285%29.jpg" />
+    <Content Include="images\shutter\shutter %286%29.jpg" />
+    <Content Include="images\shutter\shutter %287%29.jpg" />
+    <Content Include="images\shutter\shutter %288%29.jpg" />
+    <Content Include="images\shutter\shutter %289%29.jpg" />
+    <Content Include="images\stairgair1.jpg" />
+    <Content Include="images\stairgair2.jpg" />
+    <Content Include="images\stairgair3.jpg" />
+    <Content Include="images\stairgair4.jpg" />
+    <Content Include="images\stairgair5.jpg" />
+    <Content Include="images\stairgair6.jpg" />
+    <Content Include="images\stair_3.jpg" />
+    <Content Include="images\stand1.jpg" />
+    <Content Include="images\stand10.jpg" />
+    <Content Include="images\stand2.jpg" />
+    <Content Include="images\stand3.jpg" />
+    <Content Include="images\stand4.jpg" />
+    <Content Include="images\stand5.jpg" />
+    <Content Include="images\stand6.jpg" />
+    <Content Include="images\stand7.jpg" />
+    <Content Include="images\stand8.jpg" />
+    <Content Include="images\stand9.jpg" />
+    <Content Include="images\staregair_3.jpg" />
+    <Content Include="images\support.png" />
+    <Content Include="index.aspx" />
+    <Content Include="maingate.aspx" />
+    <Content Include="products.aspx" />
+    <Content Include="shed.aspx" />
+    <Content Include="stair.aspx" />
+    <Content Include="staregair.aspx" />
+    <Content Include="staregair_4.jpg" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.aspx.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about.aspx.designer.cs">
+      <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="addcart.aspx.cs">
+      <DependentUpon>addcart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="addcart.aspx.designer.cs">
+      <DependentUpon>addcart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="add_cookies.aspx.cs">
+      <DependentUpon>add_cookies.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="add_cookies.aspx.designer.cs">
+      <DependentUpon>add_cookies.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="app code\Class1.cs" />
+    <Compile Include="app code\readcookies.cs" />
+    <Compile Include="cart.aspx.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="cart.aspx.designer.cs">
+      <DependentUpon>cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="checkout.aspx.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="checkout.aspx.designer.cs">
+      <DependentUpon>checkout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="delete_cart.aspx.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="delete_cart.aspx.designer.cs">
+      <DependentUpon>delete_cart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="door.aspx.cs">
+      <DependentUpon>door.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="door.aspx.designer.cs">
+      <DependentUpon>door.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\add_category.aspx.cs">
+      <DependentUpon>add_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\add_category.aspx.designer.cs">
+      <DependentUpon>add_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\add_product.aspx.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\add_product.aspx.designer.cs">
+      <DependentUpon>add_product.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\admin.Master.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\admin.Master.designer.cs">
+      <DependentUpon>admin.Master</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\delete_category.aspx.cs">
+      <DependentUpon>delete_category.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\delete_category.aspx.designer.cs">
+      <DependentUpon>delete_category.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\display_order.aspx.cs">
+      <DependentUpon>display_order.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\display_order.aspx.designer.cs">
+      <DependentUpon>display_order.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="fab_admin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="fab_admin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="grill.aspx.cs">
+      <DependentUpon>grill.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="grill.aspx.designer.cs">
+      <DependentUpon>grill.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="maingate.aspx.cs">
+      <DependentUpon>maingate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="maingate.aspx.designer.cs">
+      <DependentUpon>maingate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="products.aspx.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="products.aspx.designer.cs">
+      <DependentUpon>products.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="shed.aspx.cs">
+      <DependentUpon>shed.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="shed.aspx.designer.cs">
+      <DependentUpon>shed.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="stair.aspx.cs">
+      <DependentUpon>stair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="stair.aspx.designer.cs">
+      <DependentUpon>stair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="staregair.aspx.cs">
+      <DependentUpon>staregair.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="staregair.aspx.designer.cs">
+      <DependentUpon>staregair.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="user.Master.cs">
+      <DependentUpon>user.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="user.Master.designer.cs">
+      <DependentUpon>user.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fab_admin\admin.Master" />
+    <Content Include="fab_admin\Site1.Master" />
+    <None Include="packages.config" />
+    <Content Include="user.Master" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="img\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1452</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1452/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

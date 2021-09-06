@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="fabricationscratch.fab_admin.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+        
+     <script src="bootstrap.min.js"></script>
+    <link href="~/bootstrap\css\bootstrap.min.css" rel="stylesheet">
+	
+	<link href="~/bootstrap/css/mystyle.css" rel="stylesheet" />
+	   
+   
+</head>
+<body>
+    <form id="form1" runat="server">  <%--header--%>
+        
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-2">    <nav class="navbar-default navbar-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="main-menu">
+                 
+
+
+               
+
+                    <li>
+                        <a href="add_product.aspx"><i class="fa fa-table "></i>ADD PRODUCT</a>
+                    </li>
+                    <li>
+                        <a href="display_order.aspx"><i class="fa fa-edit "></i>DISPLAY ORDERS</a>
+                    </li>
+
+                    <li>
+                        <a href="add_category.aspx"><i class="fa fa-edit "></i>ADD CATEGORY</a>
+                    </li>
+
+                    <li>
+                        <a href="logout.aspx"><i class="fa fa-qrcode "></i>LOGOUT</a>
+                    </li>
+                    <li>
+                        <a href="viewfeedback.aspx"><i class="fa fa-bar-chart-o"></i>View Feedback</a>
+                    </li>
+
+                    <li>
+                        <a href="test.aspx"><i class="fa fa-edit "></i>test </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa fa-table "></i>My Link Four</a>
+                    </li>
+                     <li>
+                        <a href="#"><i class="fa fa-edit "></i>My Link Five </a>
+                    </li>
+                    
+                </ul>
+                            </div>
+
+        </nav>
+        </div>
+            <div class="col-md-9 col-10">
+                
+             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>   </div>
+        </div>
+</section>
+        <!-- /. NAV SIDE  -->
+
+
+
+        
+    </form>
+    <script src="~/bootstrap/js/jquery-3.3.1.slim.min.js"></script>
+	<script src="~/bootstrap/js/popper.min.js"></script>
+	<script src="~/bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/b560810273.js"></script>
+</body>
+</html>

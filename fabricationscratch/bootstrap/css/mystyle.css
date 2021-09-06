@@ -1,0 +1,62 @@
+﻿.container-fluid {
+    padding: 0px;
+}
+#topheader {
+   
+    border-bottom: 1px solid silver;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 0.89rem;
+}
+
+nav ul li a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+}
+
+.carousel_img {
+    height: 500px;
+    width: 100%;
+}
+
+.btn-light:hover {
+    background-color: yellowgreen;
+}
+/*master Start*/
+#brand {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:1.5rem;
+    font-weight:800;
+    color:black;
+    font-style: oblique;
+}
+
+/*.text_style {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 1rem;
+}*/
+
+.list_bg {
+    font-weight: bold;
+}
+
+
+
+.head-text-color {
+    background-color: #FFFF1A;
+}
+.top-footer p {
+    color: black;
+}
+
+.top-footer a {
+    color: white;
+    font-weight: 600;
+}
+
+.top-footer h3 {
+    color: black;
+}
+/*master End*/
